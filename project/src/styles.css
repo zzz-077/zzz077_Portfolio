@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Cute+Font&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap");
+/*https://colorhunt.co/palette/283149404b6900818adbedf3*/
+:root {
+  --bg_color: #071e3d;
+  --font_color: #dbedf3;
+  --code_elem_color: #00818a;
+  --main_font: "Black Ops One", system-ui;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: var(--bg_color);
+  /* min-height: 100vh; */
+  overflow-x: hidden;
+  min-height: 100vh;
+  height: 100%;
+  font-family: var(--main_font);
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

@@ -1,0 +1,214 @@
+.site-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+  min-height: 100vh;
+}
+/*==============================*/
+/*==============================*/
+/*=============NAV==============*/
+/*==============================*/
+/*==============================*/
+nav {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 6rem 0.25rem 6rem;
+  transition: all 0.7s;
+  height: 76px;
+  position: relative;
+}
+nav.active {
+  height: 100vh;
+}
+.pattern_Background {
+  height: 100vh;
+  width: 100vw;
+  background-image: radial-gradient(rgba(50, 50, 50, 0.356) 9%, transparent);
+  background-position: 0%, 0%;
+  background-size: 7vmin 7vmin;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.7s;
+  z-index: 1;
+}
+.site_navbar ul li:hover ~ .pattern_Background {
+  background-size: 5vmin 5vmin;
+  opacity: 0.5;
+}
+.site_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+}
+.site_header h1,
+.site_footer h1 {
+  font-family: var(--main_font);
+  color: var(--code_elem_color);
+  font-size: 2.25rem;
+  font-weight: 300;
+  cursor: pointer;
+}
+.site_header h1 a,
+.site_footer h1 a {
+  color: var(--font_color);
+}
+.site_footer h1 {
+  font-size: 1.25rem;
+}
+.menu_box {
+  display: flex;
+  align-items: center;
+  font-family: var(--main_font);
+  color: var(--font_color);
+  cursor: pointer;
+}
+
+.menu_box span {
+  font-size: 18px;
+  transition: all 0.6s;
+}
+
+.menu_box:hover span {
+  font-size: 16px;
+  margin-right: 0.5rem;
+  color: var(--code_elem_color);
+}
+.closed_menu {
+  opacity: 1;
+  transform: scale(1);
+}
+.closed_menu.active {
+  opacity: 0;
+  transform: scale(0);
+  width: 0;
+}
+
+.opened_menu {
+  opacity: 1;
+  transform: scale(1);
+}
+.opened_menu.active {
+  width: 0;
+  opacity: 0;
+  transform: scale(0);
+}
+
+.menu_box img {
+  color: var(--font_color);
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+.site_navbar {
+  position: relative;
+  margin: 2rem 0 2rem 12rem;
+  margin-top: 2rem;
+  transform: translateY(-500px);
+  opacity: 0;
+  transition: all 0.5s;
+  z-index: 2;
+}
+.site_navbar.active {
+  opacity: 1;
+  transition: all 1.25s;
+  transform: translateY(0);
+}
+.site_navbar ul li {
+  list-style: none;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-bottom: 1.25rem;
+}
+.site_navbar ul li a span {
+  color: var(--code_elem_color);
+}
+
+.site_navbar ul li a {
+  transition: all 0.3s;
+  font-family: var(--main_font);
+  color: var(--font_color);
+  font-size: 3vw;
+  font-weight: 100;
+  text-decoration: none;
+}
+.site_navbar:hover > ul li {
+  opacity: 1;
+}
+.site_navbar:hover > ul li:hover {
+  opacity: 0.3;
+  margin-left: 0.875rem;
+}
+.site_navbar:hover ~ .pattern_Background {
+  background-size: 6vmin 6vmin;
+}
+/*===============================*/
+/*=============MAIN==============*/
+/*===============================*/
+/*===============================*/
+
+/*=================================*/
+/*=================================*/
+/*=============FOOTER==============*/
+/*=================================*/
+/*=================================*/
+footer {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 6rem 0.25rem 6rem;
+  transition: all 0.7s;
+  position: relative;
+  background-color: #010408;
+}
+.site_footer {
+  position: relative;
+}
+footer::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 12px;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to top, transparent, var(--bg_color) 100%);
+}
+
+.footer_content {
+  padding: 2rem 2rem;
+  width: 45%;
+}
+.footer_content ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 1rem;
+  font-size: 1.25rem;
+}
+.footer_content ul li {
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.footer_content ul li i {
+  color: var(--code_elem_color);
+  margin-right: 0.5rem;
+  transition: all 0.5s;
+}
+.footer_content ul li a {
+  color: var(--font_color);
+  text-decoration: none;
+  transition: all 0.5s;
+}
+
+.footer_content ul li:hover a,
+.footer_content ul li:hover i {
+  opacity: 0.5;
+}
+.footer_botom_text {
+  margin-top: 4rem;
+  font-size: 1rem;
+}
+.footer_botom_text p {
+  color: rgba(120, 121, 122, 0.736);
+}
