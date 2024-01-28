@@ -11,15 +11,5 @@ export class AppComponent {
 
   navbarClick() {
     this.isNavbarClicked = !this.isNavbarClicked;
-
-    if (this.isNavbarClicked) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = '';
-    }
-  }
-  linksClick() {
-    this.isNavbarClicked = false;
-    document.body.style.overflow = '';
   }
 }

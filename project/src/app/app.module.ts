@@ -6,8 +6,9 @@ import { AppComponent } from './app.component';
 
 //MATERIALS
 import { MatIconModule } from '@angular/material/icon';
+import { AboutComponent } from './about/about.component';
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, AboutComponent],
   imports: [BrowserModule, AppRoutingModule, MatIconModule],
   providers: [],
   bootstrap: [AppComponent],

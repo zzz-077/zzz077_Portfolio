@@ -2,143 +2,48 @@
   <nav [ngClass]="isNavbarClicked ? 'active' : null">
     <div class="site_header">
       <h1><<a>zzz077</a>></h1>
-      <div (click)="navbarClick()" class="menu_box">
-        <span class="closed_menu" [ngClass]="isNavbarClicked ? 'active' : null"
+      <div class="menu_box">
+        <span [ngClass]="isNavbarClicked ? 'active' : null" class="closed_menu"
           >Menu</span
         >
-
-        <span class="opened_menu" [ngClass]="!isNavbarClicked ? 'active' : null"
+        <span [ngClass]="!isNavbarClicked ? 'active' : null" class="opened_menu"
           >Close</span
         >
-        <img src="/assets/menu1.png" alt="" />
+        <img (click)="navbarClick()" src="/assets/menu1.png" alt="" />
       </div>
+
+      <ul>
+        <li>
+          <a href="#main"><span><</span>About</a>
+        </li>
+        <li>
+          <a href="#main"><span><</span>Lab</a>
+        </li>
+        <li>
+          <a href="#footer"><span><</span>Contact</a>
+        </li>
+      </ul>
     </div>
     <div [ngClass]="isNavbarClicked ? 'active' : null" class="site_navbar">
       <ul>
         <li>
-          <a (click)="linksClick()" href="#main"><span><</span>About</a>
+          <a href="#main"><span><</span>About</a>
         </li>
         <li>
-          <a (click)="linksClick()" href="#main"><span><</span>Lab</a>
+          <a href="#main"><span><</span>Lab</a>
         </li>
         <li>
-          <a (click)="linksClick()" href="#footer"><span><</span>Contact me</a>
+          <a href="#footer"><span><</span>Contact me</a>
         </li>
       </ul>
     </div>
-    <div *ngIf="isNavbarClicked" class="pattern_Background"></div>
   </nav>
   <main id="main">
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nulla
-      aspernatur asperiores cumque repellendus voluptatibus adipisci non, fugit
-      sapiente corporis officiis accusamus repudiandae consequuntur quisquam,
-      iure nostrum vitae voluptatem quod!
-    </p>
-
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nulla
-      aspernatur asperiores cumque repellendus voluptatibus adipisci non, fugit
-      sapiente corporis officiis accusamus repudiandae consequuntur quisquam,
-      iure nostrum vitae voluptatem quod!
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nulla
-      aspernatur asperiores cumque repellendus voluptatibus adipisci non, fugit
-      sapiente corporis officiis accusamus repudiandae consequuntur quisquam,
-      iure nostrum vitae voluptatem quod!
-    </p>
-
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nulla
-      aspernatur asperiores cumque repellendus voluptatibus adipisci non, fugit
-      sapiente corporis officiis accusamus repudiandae consequuntur quisquam,
-      iure nostrum vitae voluptatem quod!
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nulla
-      aspernatur asperiores cumque repellendus voluptatibus adipisci non, fugit
-      sapiente corporis officiis accusamus repudiandae consequuntur quisquam,
-      iure nostrum vitae voluptatem quod!
-    </p>
-
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nulla
-      aspernatur asperiores cumque repellendus voluptatibus adipisci non, fugit
-      sapiente corporis officiis accusamus repudiandae consequuntur quisquam,
-      iure nostrum vitae voluptatem quod!
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nulla
-      aspernatur asperiores cumque repellendus voluptatibus adipisci non, fugit
-      sapiente corporis officiis accusamus repudiandae consequuntur quisquam,
-      iure nostrum vitae voluptatem quod!
-    </p>
-
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nulla
-      aspernatur asperiores cumque repellendus voluptatibus adipisci non, fugit
-      sapiente corporis officiis accusamus repudiandae consequuntur quisquam,
-      iure nostrum vitae voluptatem quod!
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nulla
-      aspernatur asperiores cumque repellendus voluptatibus adipisci non, fugit
-      sapiente corporis officiis accusamus repudiandae consequuntur quisquam,
-      iure nostrum vitae voluptatem quod!
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nulla
-      aspernatur asperiores cumque repellendus voluptatibus adipisci non, fugit
-      sapiente corporis officiis accusamus repudiandae consequuntur quisquam,
-      iure nostrum vitae voluptatem quod!
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nulla
-      aspernatur asperiores cumque repellendus voluptatibus adipisci non, fugit
-      sapiente corporis officiis accusamus repudiandae consequuntur quisquam,
-      iure nostrum vitae voluptatem quod!
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nulla
-      aspernatur asperiores cumque repellendus voluptatibus adipisci non, fugit
-      sapiente corporis officiis accusamus repudiandae consequuntur quisquam,
-      iure nostrum vitae voluptatem quod!
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nulla
-      aspernatur asperiores cumque repellendus voluptatibus adipisci non, fugit
-      sapiente corporis officiis accusamus repudiandae consequuntur quisquam,
-      iure nostrum vitae voluptatem quod!
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nulla
-      aspernatur asperiores cumque repellendus voluptatibus adipisci non, fugit
-      sapiente corporis officiis accusamus repudiandae consequuntur quisquam,
-      iure nostrum vitae voluptatem quod!
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nulla
-      aspernatur asperiores cumque repellendus voluptatibus adipisci non, fugit
-      sapiente corporis officiis accusamus repudiandae consequuntur quisquam,
-      iure nostrum vitae voluptatem quod!
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nulla
-      aspernatur asperiores cumque repellendus voluptatibus adipisci non, fugit
-      sapiente corporis officiis accusamus repudiandae consequuntur quisquam,
-      iure nostrum vitae voluptatem quod!
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nulla
-      aspernatur asperiores cumque repellendus voluptatibus adipisci non, fugit
-      sapiente corporis officiis accusamus repudiandae consequuntur quisquam,
-      iure nostrum vitae voluptatem quod!
-    </p>
+    <app-about></app-about>
   </main>
   <footer id="footer">
     <div class="site_footer">
-      <h1><<a>Find me on</a>></h1>
+      <h1><a>Find me on</a>/></h1>
       <div class="footer_content">
         <ul>
           <li>

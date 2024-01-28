@@ -1,0 +1,28 @@
+{
+  "name": "Vaska Zardiashvili",
+  "nickname": "zzz077",
+  "dayOfBirthTimestamp": 1091599200,
+  "email": "zardiashvili2004@gmail.com",
+  "workExperience": [{ "none": "Not yet" }],
+  "education": [
+    {
+      "2022-now": "International Black Sea University computer science, second course"
+    },
+    { "2021-2022": "Evo-gen Front-End Development 3-month course" },
+    { "2022-now": "c++ olympiad group" }
+  ],
+  "skills": [
+    "HTML/CSS/JS",
+    "Angular",
+    "Rest API",
+    "JSON",
+    "TypeScript",
+    "Firebase",
+    "PHP",
+    "UX/UI",
+    "c++",
+    "Algorithms",
+    "Blender",
+    "Unreal Engine 4-5"
+  ]
+}
