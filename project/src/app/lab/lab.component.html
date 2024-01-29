@@ -1,0 +1,69 @@
+<div class="lab_content">
+  <h1 class="content_name"><a>Lab</a>/></h1>
+  <div class="lab_box">
+    <div class="lab_links_container">
+      <ul>
+        <h1>Sites</h1>
+        <div class="lab_links">
+          <li (mouseenter)="linkMouseEnter(1)" (mouseleave)="linkMouseLeave()">
+            <a href="https://zzz-skydash.netlify.app/">Administrator site</a>
+            <img src="/assets/SiteLogoN1.png" alt="" />
+          </li>
+          <li (mouseenter)="linkMouseEnter(2)" (mouseleave)="linkMouseLeave()">
+            <a href="https://zzz-scholar.netlify.app/"
+              >Programing Courses site</a
+            >
+            <img src="/assets/SiteLogoN2.png" alt="" />
+          </li>
+          <li (mouseenter)="linkMouseEnter(3)" (mouseleave)="linkMouseLeave()">
+            <a href="https://zzz-077.github.io/wix.github.io/"
+              >Online Market site</a
+            >
+            <img src="/assets/SiteLogoN3.png" alt="" />
+          </li>
+          <li (mouseenter)="linkMouseEnter(4)" (mouseleave)="linkMouseLeave()">
+            <a href="https://masterleague.netlify.app/">CSGO Esport site</a>
+            <img src="/assets/SiteLogoN4.png" alt="" />
+          </li>
+          <li (mouseenter)="linkMouseEnter(5)" (mouseleave)="linkMouseLeave()">
+            <a href="https://zzz-sweatworks.netlify.app/"
+              >Gym Information site</a
+            >
+            <img src="/assets/SiteLogoN5.png" alt="" />
+          </li>
+          <li (mouseenter)="linkMouseEnter(6)" (mouseleave)="linkMouseLeave()">
+            <a href="http://socialserviceproject.infinityfreeapp.com/index.php"
+              >Social Services site</a
+            >
+            <img src="/assets/SiteLogoN6.png" alt="" />
+          </li>
+        </div>
+      </ul>
+      <ul>
+        <h1>Games</h1>
+        <div class="lab_links">
+          <li (mouseenter)="linkMouseEnter(7)" (mouseleave)="linkMouseLeave()">
+            <a href="https://zzzwordli.netlify.app/">Wordli Puzzle Game</a>
+            <img src="/assets/GameLogoN1.png" alt="" />
+          </li>
+          <li (mouseenter)="linkMouseEnter(8)" (mouseleave)="linkMouseLeave()">
+            <a href="https://englishquiz-game.netlify.app/"
+              >English Grammar Quiz Game</a
+            >
+            <img src="/assets/GameLogoN2.png" alt="" />
+          </li>
+        </div>
+      </ul>
+    </div>
+    <div class="display_box">
+      <div *ngFor="let img of imgData">
+        <img
+          *ngIf="img.id == linkId"
+          [ngClass]="img.id == linkId ? 'active' : null"
+          [src]="img.img"
+          alt=""
+        />
+      </div>
+    </div>
+  </div>
+</div>

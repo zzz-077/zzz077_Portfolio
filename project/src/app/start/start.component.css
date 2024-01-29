@@ -1,0 +1,56 @@
+.start_content {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 6rem 2rem 6rem;
+  transition: all 0.7s;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  /* align-items: center; */
+}
+.start_box {
+  font-family: var(--main_font);
+  text-align: left;
+}
+.start_box div {
+  padding: 0 4rem;
+}
+.start_box div h1 {
+  font-weight: 100;
+  /* font-size: 1.375rem; */
+  color: var(--font_color);
+}
+.start_box div h2 {
+  font-weight: 100;
+  color: var(--font_color);
+}
+.start_box div span {
+  color: var(--code_elem_color);
+}
+.start_box div h2 span {
+  font-family: "Poppins", sans-serif;
+  font-style: italic;
+  font-weight: 100;
+  color: var(--font_color);
+}
+.start_box div p {
+  font-weight: 100;
+  color: var(--font_color);
+  margin-top: 1rem;
+  opacity: 0.5;
+}
+
+/*=====================================*/
+/*=====================================*/
+/*=============RESPONSIVE==============*/
+/*=====================================*/
+/*=====================================*/
+
+@media (max-width: 1024px) {
+  .start_content {
+    padding: 2rem;
+  }
+}

@@ -1,7 +1,15 @@
-<div class="site-wrapper">
+<div *ngIf="!isLoaded" class="loader_box">
+  <h1>zzz077</h1>
+</div>
+
+<div *ngIf="isLoaded" class="site-wrapper">
+  <div id="start" class="patern_box active start_box">
+    <!-- <img class="" src="/assets/startimg2.png" alt="" /> -->
+    <app-start></app-start>
+  </div>
   <nav [ngClass]="isNavbarClicked ? 'active' : null">
     <div class="site_header">
-      <h1><<a>zzz077</a>></h1>
+      <h1><<a href="">zzz077</a>></h1>
       <div class="menu_box">
         <span [ngClass]="isNavbarClicked ? 'active' : null" class="closed_menu"
           >Menu</span
@@ -11,13 +19,15 @@
         >
         <img (click)="navbarClick()" src="/assets/menu1.png" alt="" />
       </div>
-
       <ul>
         <li>
-          <a href="#main"><span><</span>About</a>
+          <a href="#start"><span><</span>Start</a>
         </li>
         <li>
-          <a href="#main"><span><</span>Lab</a>
+          <a href="#about"><span><</span>About</a>
+        </li>
+        <li>
+          <a href="#lab"><span><</span>Lab</a>
         </li>
         <li>
           <a href="#footer"><span><</span>Contact</a>
@@ -27,23 +37,27 @@
     <div [ngClass]="isNavbarClicked ? 'active' : null" class="site_navbar">
       <ul>
         <li>
-          <a href="#main"><span><</span>About</a>
+          <a href="#start"><span><</span>Start</a>
         </li>
         <li>
-          <a href="#main"><span><</span>Lab</a>
+          <a href="#about"><span><</span>About</a>
         </li>
         <li>
-          <a href="#footer"><span><</span>Contact me</a>
+          <a href="#lab"><span><</span>Lab</a>
+        </li>
+        <li>
+          <a href="#footer"><span><</span>Contact</a>
         </li>
       </ul>
     </div>
   </nav>
-  <main id="main">
-    <app-about></app-about>
+  <main>
+    <app-about id="about"></app-about>
+    <app-lab id="lab"></app-lab>
   </main>
   <footer id="footer">
     <div class="site_footer">
-      <h1><a>Find me on</a>/></h1>
+      <h1 class="content_name"><a>Find me on</a>/></h1>
       <div class="footer_content">
         <ul>
           <li>

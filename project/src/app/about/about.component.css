@@ -4,7 +4,7 @@
   padding: 2rem 6rem 2rem 6rem;
   transition: all 0.7s;
   position: relative;
-  background-color: #0e0c16;
+  background-color: var(--content_bg_color);
   position: relative;
 }
 .about_content::before {
@@ -16,27 +16,8 @@
   left: 0;
   background: linear-gradient(to top, transparent, var(--bg_color) 100%);
 }
-.about_content::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 12px;
-  bottom: 0;
-  left: 0;
-  background: linear-gradient(to bottom, transparent, var(--bg_color) 100%);
-}
-.about_content h1 {
-  font-family: var(--main_font);
-  color: var(--code_elem_color);
-  font-size: 1.25rem;
-  font-weight: 300;
-  cursor: pointer;
-}
-.about_content h1 a {
-  color: var(--font_color);
-}
+
 .code_box {
-  margin-top: 1rem;
   padding: 0 4rem;
   display: flex;
   flex-direction: column;

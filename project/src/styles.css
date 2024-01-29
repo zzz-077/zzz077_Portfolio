@@ -1,11 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Cute+Font&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+
 /*https://colorhunt.co/palette/283149404b6900818adbedf3*/
 :root {
   --bg_color: #181d31;
   --font_color: #dbedf3;
   --code_elem_color: #00818a;
   --main_font: "Black Ops One", system-ui;
+  --content_bg_color: #0e0c16;
+  --content_darker_bg_color: #060509;
 }
 * {
   padding: 0;
@@ -31,4 +35,16 @@ body {
 body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.content_name {
+  font-family: var(--main_font);
+  color: var(--code_elem_color);
+  font-size: 1.25rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+.content_name a {
+  color: var(--font_color);
+  text-decoration: none;
 }
