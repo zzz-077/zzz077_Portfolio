@@ -29,6 +29,9 @@
   position: relative;
   padding: 0 4rem;
   z-index: 1;
+  font-size: 1.25rem;
+  font-weight: 100;
+  font-family: var(--main_font);
 }
 .loader_box h1::before {
   position: absolute;
@@ -59,24 +62,27 @@
 nav {
   display: flex;
   padding: 1rem 6rem;
-  position: absolute;
+  position: fixed;
   width: 100%;
   flex-direction: column;
   height: 82px;
   transition: all 0.5s;
+  z-index: 100;
+  backdrop-filter: blur(5px);
 }
 nav.active {
+  padding: 0 6rem;
+  height: 50px;
+}
+
+nav.navbarclicked {
   height: 278px;
 }
+
 .start_box {
   position: relative;
 }
-.start_box img {
-  height: 100vh;
-  width: 100%;
-  object-fit: cover;
-  filter: hue-rotate(155deg);
-}
+
 .start_box::after {
   content: "";
   position: absolute;
@@ -84,16 +90,18 @@ nav.active {
   height: 12px;
   bottom: 0;
   left: 0;
-  background: linear-gradient(to bottom, transparent, var(--bg_color) 100%);
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    var(--content_bg_color) 100%
+  );
 }
 .patern_box {
-  background: -webkit-radial-gradient(
-    center,
-    ellipse,
-    #ef0e39 0%,
-    #000000 100%
+  background: radial-gradient(
+    ellipse at center,
+    var(--code_elem_color) 0%,
+    #000000 95%
   );
-  background: radial-gradient(ellipse at center, #ef0e39 0%, #000000 100%);
   overflow: hidden;
   height: 100vh;
   width: 100%;
@@ -141,6 +149,7 @@ nav ul li a span {
   font-weight: 300;
   cursor: pointer;
 }
+
 .site_header h1 a {
   color: var(--font_color);
   text-decoration: none;
@@ -154,7 +163,7 @@ nav ul li a span {
 }
 
 .menu_box span {
-  font-size: 18px;
+  font-size: 0.875rem;
   transition: all 0.6s;
 }
 
@@ -230,7 +239,11 @@ footer::before {
   height: 12px;
   top: 0;
   left: 0;
-  background: linear-gradient(to top, transparent, var(--bg_color) 100%);
+  background: linear-gradient(
+    to top,
+    transparent,
+    var(--content_bg_color) 100%
+  );
 }
 
 .footer_content {
@@ -275,6 +288,9 @@ footer::before {
   nav {
     padding: 1rem 2rem;
   }
+  nav.active {
+    padding: 0 2rem;
+  }
   footer {
     padding: 2rem 2rem 0.25rem 2rem;
   }
@@ -294,5 +310,34 @@ footer::before {
   }
   .menu_box {
     display: flex;
+  }
+  .footer_content {
+    padding: 1rem;
+    padding-top: 0;
+    width: 100%;
+  }
+  .site_header h1 {
+    font-size: 1.875rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .footer_content ul {
+    font-size: 1rem;
+  }
+  footer {
+    padding: 1rem 1rem 0.25rem 1rem;
+  }
+  nav {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  nav.active {
+    padding: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .site_navbar ul li a {
+    font-size: 1.25rem;
   }
 }

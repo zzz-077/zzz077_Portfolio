@@ -28,7 +28,11 @@
   height: 12px;
   bottom: 0;
   left: 0;
-  background: linear-gradient(to bottom, transparent, var(--bg_color) 100%);
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    var(--content_bg_color) 100%
+  );
 }
 
 .lab_box {
@@ -146,4 +150,49 @@
 .lab_links li:hover::before {
   filter: blur(40px);
   width: 40px;
+}
+
+@media (max-width: 1024px) {
+  .lab_content {
+    padding: 2rem;
+  }
+  .lab_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .lab_links_container {
+    width: 100%;
+  }
+  .lab_links_container {
+    width: 100%;
+  }
+  .display_box {
+    width: 100%;
+    height: 400px;
+  }
+}
+@media (max-width: 768px) {
+  .lab_links_container {
+    padding: 0 1rem;
+  }
+}
+@media (max-width: 425px) {
+  .lab_content {
+    padding: 1rem;
+  }
+  .display_box {
+    width: 100%;
+    height: 250px;
+  }
+  .lab_links_container ul {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .lab_links li {
+    width: 14%;
+  }
 }

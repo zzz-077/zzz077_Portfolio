@@ -7,9 +7,9 @@
   --bg_color: #181d31;
   --font_color: #dbedf3;
   --code_elem_color: #00818a;
-  --main_font: "Black Ops One", system-ui;
   --content_bg_color: #0e0c16;
   --content_darker_bg_color: #060509;
+  --main_font: "Black Ops One", system-ui;
 }
 * {
   padding: 0;
@@ -20,7 +20,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  background-color: var(--bg_color);
+  background-color: var(--content_bg_color);
   /* min-height: 100vh; */
   overflow-x: hidden;
   min-height: 100vh;
@@ -47,4 +47,14 @@ body {
 .content_name a {
   color: var(--font_color);
   text-decoration: none;
+}
+::-moz-selection {
+  /* Code for Firefox */
+  color: var(--font_color);
+  background: var(--code_elem_color);
+}
+
+::selection {
+  color: var(--font_color);
+  background: var(--code_elem_color);
 }

@@ -44,7 +44,6 @@ export class LabComponent {
 
   linkMouseEnter(link: any) {
     this.linkId = link;
-    console.log(link);
   }
   linkMouseLeave() {
     this.linkId = 0;

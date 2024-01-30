@@ -3,13 +3,15 @@
 </div>
 
 <div *ngIf="isLoaded" class="site-wrapper">
-  <div id="start" class="patern_box active start_box">
-    <!-- <img class="" src="/assets/startimg2.png" alt="" /> -->
+  <div id="start" class="patern_box start_box">
     <app-start></app-start>
   </div>
-  <nav [ngClass]="isNavbarClicked ? 'active' : null">
+  <nav
+    [class.navbarclicked]="isNavbarClicked && isScrolled"
+    [class.active]="!isNavbarClicked && isScrolled"
+  >
     <div class="site_header">
-      <h1><<a href="">zzz077</a>></h1>
+      <h1 class="site_logo"><<a href="">zzz077</a>></h1>
       <div class="menu_box">
         <span [ngClass]="isNavbarClicked ? 'active' : null" class="closed_menu"
           >Menu</span
