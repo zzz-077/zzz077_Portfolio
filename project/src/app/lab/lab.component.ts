@@ -34,10 +34,14 @@ export class LabComponent {
     },
     {
       id: 7,
-      img: '/assets/gameN1.png',
+      img: '/assets/siteN7.png',
     },
     {
       id: 8,
+      img: '/assets/gameN1.png',
+    },
+    {
+      id: 9,
       img: '/assets/gameN2.png',
     },
   ];
