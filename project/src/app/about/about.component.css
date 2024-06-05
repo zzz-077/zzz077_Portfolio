@@ -134,6 +134,24 @@
 .code_rows:nth-child(28):before {
   content: "28";
 }
+.code_rows:nth-child(29):before {
+  content: "29";
+}
+.code_rows:nth-child(30):before {
+  content: "30";
+}
+.code_rows:nth-child(31):before {
+  content: "31";
+}
+.code_rows:nth-child(32):before {
+  content: "32";
+}
+.code_rows:nth-child(33):before {
+  content: "33";
+}
+.code_rows:nth-child(34):before {
+  content: "34";
+}
 
 /*=====================================*/
 /*=============RESPONSIVE==============*/
