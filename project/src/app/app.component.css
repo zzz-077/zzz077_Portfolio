@@ -124,6 +124,7 @@ nav ul li a {
   font-size: 1.5rem;
   color: var(--font_color);
   text-decoration: none;
+  font-family: var(--main_font);
 }
 nav ul li a span {
   color: var(--code_elem_color);

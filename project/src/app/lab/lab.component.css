@@ -45,7 +45,7 @@
   height: 480px;
   position: relative;
 }
-.display_box div {
+.display_box .display_list {
   position: absolute;
   top: 0;
   left: 0;
@@ -53,16 +53,42 @@
   height: 100%;
 }
 
-.display_box div img {
+.display_box .display_list .content img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: all 0.35s;
   opacity: 1;
 }
-.display_box div img.active {
+.display_box .display_list .content img.active {
   animation: imgLoadAnim 0.35s linear;
 }
+.display_box .display_list .content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+.display_box .display_list .content .site_description {
+  margin-top: 1rem;
+}
+.display_box .display_list .content .site_description,
+.display_box .display_list .content .site_responsive {
+  display: flex;
+  align-items: center;
+  gap: 0.125rem;
+}
+.display_box .display_list .content .site_description span,
+.display_box .display_list .content .site_responsive span {
+  color: #82fef1;
+  font-size: 0.875rem;
+  margin-right: 0.25rem;
+}
+.display_box .display_list .content .site_description p,
+.display_box .display_list .content .site_responsive p {
+  color: #da810d;
+  font-size: 0.875rem;
+}
+
 @keyframes imgLoadAnim {
   from {
     opacity: 0;
@@ -185,7 +211,7 @@
   }
   .display_box {
     width: 100%;
-    height: 250px;
+    height: 300px;
   }
   .lab_links_container ul {
     width: 100%;

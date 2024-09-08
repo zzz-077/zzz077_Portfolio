@@ -8,7 +8,6 @@ import { Component, OnInit, HostListener } from '@angular/core';
 export class AppComponent {
   title = 'project';
   isNavbarClicked = false;
-  isLoaded = false;
   isScrolled = false;
   constructor() {}
 
@@ -19,14 +18,6 @@ export class AppComponent {
     } else {
       this.isScrolled = false;
     }
-  }
-
-  ngOnInit() {
-    document.body.style.overflow = 'hidden';
-    setTimeout(() => {
-      document.body.style.overflow = 'visible';
-      this.isLoaded = true;
-    }, 3000);
   }
 
   navbarClick() {

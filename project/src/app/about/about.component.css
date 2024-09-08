@@ -152,6 +152,12 @@
 .code_rows:nth-child(34):before {
   content: "34";
 }
+.code_rows:nth-child(35):before {
+  content: "35";
+}
+.code_rows:nth-child(36):before {
+  content: "36";
+}
 
 /*=====================================*/
 /*=============RESPONSIVE==============*/
