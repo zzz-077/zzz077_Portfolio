@@ -93,10 +93,20 @@ export class LabComponent implements OnInit {
             'Typescript, CSS3, Angular, Firebase, Rxjs, Ngrx, REST API',
           responsive: true,
         },
+        {
+          id: 10,
+          img: '/assets/siteN10.png',
+          icon: '/assets/SiteLogoN10.png',
+          name: 'ChatZ site',
+          href: 'https://github.com/zzz-077/fullstack-app-project',
+          description:
+            'Angular, Nodejs, mongoDB, express.js, socketIO, JWT, Rxjs, Ngrx',
+          responsive: false,
+        },
       ],
       games: [
         {
-          id: 10,
+          id: 11,
           img: '/assets/gameN1.png',
           icon: '/assets/GameLogoN1.png',
           name: 'Wordli Puzzle Game',
@@ -105,7 +115,7 @@ export class LabComponent implements OnInit {
           responsive: true,
         },
         {
-          id: 11,
+          id: 12,
           img: '/assets/gameN2.png',
           icon: '/assets/GameLogoN2.png',
           name: 'English Quiz Game',
