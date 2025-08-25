@@ -103,10 +103,19 @@ export class LabComponent implements OnInit {
             'Angular, Nodejs, mongoDB, express.js, socketIO, JWT, Rxjs, Ngrx',
           responsive: false,
         },
+        {
+          id: 11,
+          img: '/assets/siteN11.png',
+          icon: '/assets/SiteLogoN11.png',
+          name: 'VideoZ site',
+          href: 'https://videoz-ashy.vercel.app/',
+          description: 'VanilaJs, NestJs, socketIO, AgoraRTC',
+          responsive: true,
+        },
       ],
       games: [
         {
-          id: 11,
+          id: 12,
           img: '/assets/gameN1.png',
           icon: '/assets/GameLogoN1.png',
           name: 'Wordli Puzzle Game',
@@ -115,7 +124,7 @@ export class LabComponent implements OnInit {
           responsive: true,
         },
         {
-          id: 12,
+          id: 13,
           img: '/assets/gameN2.png',
           icon: '/assets/GameLogoN2.png',
           name: 'English Quiz Game',

@@ -158,6 +158,30 @@
 .code_rows:nth-child(36):before {
   content: "36";
 }
+.code_rows:nth-child(37):before {
+  content: "37";
+}
+.code_rows:nth-child(38):before {
+  content: "38";
+}
+.code_rows:nth-child(39):before {
+  content: "39";
+}
+.code_rows:nth-child(40):before {
+  content: "40";
+}
+.code_rows:nth-child(41):before {
+  content: "41";
+}
+.code_rows:nth-child(42):before {
+  content: "42";
+}
+.code_rows:nth-child(43):before {
+  content: "43";
+}
+.code_rows:nth-child(44):before {
+  content: "44";
+}
 
 /*=====================================*/
 /*=============RESPONSIVE==============*/
